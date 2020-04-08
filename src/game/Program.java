@@ -1,7 +1,7 @@
 package game;
 
-import Persons.User;
-import Persons.Persons;
+import Players.User;
+import Players.Persons;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -11,12 +11,12 @@ public class Program {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		List<Persons> newPersons = new ArrayList<>();
+		List<Players> newPlayers = new ArrayList<>();
 
 		System.out.println("Choose your vehicule:");
-		System.out.println("type 1 for a Customer");
-		System.out.println("type 2 for a Admin");
-		System.out.println("type 3 for a Mechanic");
+		System.out.println("type 1 for a Mercedes");
+		System.out.println("type 2 for a BMW");
+		System.out.println("type 3 for a Twingo");
 		System.out.println("***************************************");
 		
 		while( answer.hasNextInt() == false ) {
@@ -28,16 +28,16 @@ public class Program {
 		int cat = answer.nextInt();
 		switch ( cat ) {
 			case 1:
-			System.out.println("Vous avez choisi la catégorie Customer");			
-			newPersons.add(Customer.createCustomer()); 
+			System.out.println("Vous avez choisi la catégorie Mercedes");			
+			newPlayer.add(mercedes.createMercedes()); 
 				break;
 			case 2:
-			System.out.println("Vous avez choisi la catégorie Admin");
-			newPersons.add(Admin.createAdmin());
+			System.out.println("Vous avez choisi la catégorie BMW");
+			newPlayer.add(bmw.createBmw());
 				break;
 			case 3:
-			System.out.println("Vous avez choisi la catégorie Mechanic");
-			newPersons.add(Mechanic.createMechanic());
+			System.out.println("Vous avez choisi la catégorie Twingo");
+			newPlayer.add(twingo.createTwingo());
 				break;
 			default:
 			System.out.println("??????????????");

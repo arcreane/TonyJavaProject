@@ -1,23 +1,25 @@
-package Persons;
+package Players;
 
 import java.util.Scanner;
 
-public class Persons {
+public class Players {
 
 	String Name;
 	String Surname;
 	String Id;
+	String Speed;
 	
 	//12
-	public Persons() {
+	public Players() {
 		
 	}
 	
 	// 10
-	Persons(String name, String surname, String id) {
+	Players(String name, String surname, String id, String speed) {
 		Name = name;
 		Surname = surname;
 		Id = id;
+		Speed = speed;
 	}
 
 	//13
@@ -30,7 +32,6 @@ public class Persons {
 		  Surname = answer.nextLine();
 		  System.out.println("Veuillez renseigner votre nom : ");
 		  Name = answer.nextLine();
-		  // Récupérer un nombre/plusieurs random et les concaténés avec le name et surname pour créer l'id
 	}
 }
 	
